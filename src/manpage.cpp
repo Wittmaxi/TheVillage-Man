@@ -59,7 +59,6 @@ std::cout << Document {
     }, 
     ConvenientText {
         "Powered by WebCPP.\n"
-        "\t\tWritten by Maximilian Wittmer\n"
         "Source Code: "
     },
     HyperLink {HyperReference{"https://github.com/Wittmaxi/TheVillage-Man"},
