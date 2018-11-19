@@ -55,12 +55,15 @@ std::cout << Document {
         Input {InputType{"submit"}}
     },
     Container {ClassAttribute {"shell"},
-        Function (printMan) 
+        Function {printMan} 
     }, 
     ConvenientText {
         "Powered by WebCPP.\n"
-        "\t\tWritten by Maximilian Wittmer"
+        "\t\tWritten by Maximilian Wittmer\n"
         "Source Code: "
+    },
+    HyperLink {HyperReference{"https://github.com/Wittmaxi/TheVillage-Man"},
+        ConvenientText{"https://github.com/Wittmaxi/TheVillage-Man"}
     }
 };
 }
