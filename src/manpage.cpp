@@ -26,7 +26,7 @@ void printMan () {
     if (ENV::GET("s") != "") {
         std::string queryString = ENV::GET("s");
         std::transform(queryString.begin(), queryString.end(), queryString.begin(), tolower);
-        queryString = std::regex_replace (queryString, std::regex("([^a-z])+"), "");
+        queryString = std::regex_replace (queryString, std::regex("([^a-z\\-\\_0-9\\[\\]])+"), "");
         std::string stor = exec ("man \"" + queryString + "\"");
         if (stor == "") {
             std::cout << ConvenientText("We are sorry, but there was no manpage entry to " + queryString);
